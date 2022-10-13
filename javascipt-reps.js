@@ -69,3 +69,13 @@ console.log(dart)
 // Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfyarray and replace it with "Gameboy".
 wolfy.splice(0,1,"Gameboy")
 console.log(wolfy)
+
+//5.
+// Yell at the Ninja Turtles
+// Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+// Use a for of loop(not a typo - try it out! Try a for of loop) to call toUpperCase()on each of them and print out the result.
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+
+for (let i of ninjaTurtles) {
+    console.log(i.toUpperCase())
+}
