@@ -79,3 +79,50 @@ let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 for (let i of ninjaTurtles) {
     console.log(i.toUpperCase())
 }
+
+
+//6. 
+// Here is a list of favMovies:
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+// Console log: the index of Titanic
+console.log(favMovies.indexOf("Titanic"))
+console.log(favMovies[8])
+// Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
+// Note: if you have to add to the array, feel free to add any movie you'd like
+
+// use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
+// Use the method pop
+// push"Guardians of the Galaxy"
+// Reverse the array
+// Use the shiftmethod
+// unshift- what does it return?
+// splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+// slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+// store the value of your slicein a variable, console.log it - Thought question: what is going on here?
+// console.log your final results
+// After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+// Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
+
+favMovies.sort() //sort method rearranges elements to alphabetical order
+favMovies.pop() //removes last element
+favMovies.push("Guardians of the Galaxy") //adds movie to the end of array
+favMovies.reverse() //reverses order of elements
+//console.log(favMovies)
+favMovies.shift() //deletes the first element of array
+//console.log(favMovies)
+favMovies.unshift("Minions") // adds Minions to beginning of array
+console.log(favMovies.indexOf("Django Unchained")) //prints: 15
+favMovies.splice(15, 0, "Avatar") //adds Avatar to index 15 spot
+favMovies.slice()
+
+let midArray = favMovies.length / 2 
+console.log(midArray) //returns half of total array
+
+let newArray = favMovies.slice(10, 20)  //slices 2nd half of favMovies and puts it into newArray, it is like making a copying
+console.log(newArray) //this will print 2nd half of array in a new variable
+
+console.log(favMovies)
+
+
+
