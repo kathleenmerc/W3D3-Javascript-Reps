@@ -124,5 +124,13 @@ console.log(newArray) //this will print 2nd half of array in a new variable
 
 console.log(favMovies)
 
-
+//7.
+// Where is Waldo
+// With the following multi-dimensional array
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+// Remove Eggbert (hint look at the slice/splice method(s))
+// Change "Neff" to "No One"
+// Access and console.log "Waldo"
 
