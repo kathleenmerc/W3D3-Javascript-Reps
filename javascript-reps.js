@@ -1,5 +1,7 @@
 // Week 3 Day 3: Part II: Javascript Reps
 
+
+
 //1.
 // Easy Going
 // Write a for loop that will log the numbers 1 through 20.
@@ -8,20 +10,22 @@ for (i = 1; i <=20; i++) {
     console.log(i)
 }
 
+
+
 //2.
 // Get Even
 // Write a for loop that will log only the even numbers in 0 through 200.
-
 // Hint: Think about the increment expression.
 
-for (i=0; i <=20; i+=2){
+for (i=0; i <=200; i+=2){
     console.log(i)
 }
+
+
 
 //3. 
 // Fizz Buzz
 // This is a classic problem that you should get really comfortable solving. If you've solved it before, try to make it more elegant and short.
-
 // Write a javascript application that logs all numbers from 1 - 100.
 // If a number is divisible by 3 log "Fizz" instead of the number.
 // If a number is divisible by 5 log "Buzz" instead of the number.
@@ -40,6 +44,7 @@ for (i=1; i<=100; i++) {
 }
 
 
+
 //4.
 // Wild Wild Life
 // Use the following arrays to answer the questions below (name,species ,age, hometown): You should be modifying the elements by accessing them. It is up to you which methods to use.
@@ -48,8 +53,8 @@ const sharky = ["Sharky", "shark", 20, "Left Coast"]
 const plantee = ["Plantee", "plant",  5000 , "Mordor"]
 const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
 const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
-// Plantee just had her birthday; change Plantee's array to reflect her being a year older.
 
+// Plantee just had her birthday; change Plantee's array to reflect her being a year older.
 //solution a:
 plantee.splice(2, 1, 5001)
 console.log(plantee)
@@ -70,6 +75,8 @@ console.log(dart)
 wolfy.splice(0,1,"Gameboy")
 console.log(wolfy)
 
+
+
 //5.
 // Yell at the Ninja Turtles
 // Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
@@ -81,6 +88,7 @@ for (let i of ninjaTurtles) {
 }
 
 
+
 //6. 
 // Here is a list of favMovies:
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
@@ -88,6 +96,7 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 // Console log: the index of Titanic
 console.log(favMovies.indexOf("Titanic"))
 console.log(favMovies[8])
+
 // Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
 // Note: if you have to add to the array, feel free to add any movie you'd like
 
@@ -105,24 +114,26 @@ console.log(favMovies[8])
 // Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
 
 favMovies.sort() //sort method rearranges elements to alphabetical order
-favMovies.pop() //removes last element
-favMovies.push("Guardians of the Galaxy") //adds movie to the end of array
-favMovies.reverse() //reverses order of elements
+favMovies.pop() //pop method removes last element
+favMovies.push("Guardians of the Galaxy") //push method adds movie to the end of array
+favMovies.reverse() //reverse method reverses order of elements
 //console.log(favMovies)
-favMovies.shift() //deletes the first element of array
+favMovies.shift() //shift method deletes the first element of array
 //console.log(favMovies)
-favMovies.unshift("Minions") // adds Minions to beginning of array
-console.log(favMovies.indexOf("Django Unchained")) //prints: 15
-favMovies.splice(15, 0, "Avatar") //adds Avatar to index 15 spot
-favMovies.slice()
+favMovies.unshift("Minions") // unshift method adds Minions to beginning of array
+console.log(favMovies.indexOf("Django Unchained")) //prints: 15, indexOf method returns what index the element is; if the element does not exist in the array it will print -1
+favMovies.splice(15, 0, "Avatar") //adds Avatar to index 15 spot, splice method can delete and insert elements in the middle of array
+//favMovies.slice()
 
 let midArray = favMovies.length / 2 
-console.log(midArray) //returns half of total array
+console.log(midArray) //returns half of total array, prints: 10
 
 let newArray = favMovies.slice(10, 20)  //slices 2nd half of favMovies and puts it into newArray, it is like making a copying
 console.log(newArray) //this will print 2nd half of array in a new variable
 
 console.log(favMovies)
+
+
 
 //7.
 // Where is Waldo
@@ -133,4 +144,10 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 // Remove Eggbert (hint look at the slice/splice method(s))
 // Change "Neff" to "No One"
 // Access and console.log "Waldo"
+
+whereIsWaldo.splice(1, 1)
+console.log(whereIsWaldo)
+whereIsWaldo[1][2] = "No One"
+console.log(whereIsWaldo)
+console.log(whereIsWaldo[2][1][1])
 
