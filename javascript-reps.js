@@ -151,3 +151,21 @@ whereIsWaldo[1][2] = "No One"
 console.log(whereIsWaldo)
 console.log(whereIsWaldo[2][1][1])
 
+
+
+//8.
+// Excited Kitten
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+
+let quotes = ["Love me, pet me! HSSSSSS!", "...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+
+for (let i = 1; i <= 40; i++) {
+    if (i % 2 === 0) {
+        let meow = Math.floor((Math.random() * (3 - 1 + 1) + 1)) // use this formula when you need a random number within a certain range => Math.random() * (max - min + 1) - min
+        //console.log(`this is index ${meow} in quotes array`)
+        console.log(`${i} : ${quotes[meow]}`)
+    } else {
+        console.log(`${i} : ${quotes[0]}`)
+    }
+}
